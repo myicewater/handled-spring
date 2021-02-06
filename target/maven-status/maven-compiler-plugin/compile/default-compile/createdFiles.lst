@@ -1,1 +1,9 @@
+antation\JAutowired.class
 com\jaxon\demo\controller\HelloController.class
+util\PropUtil.class
+antation\JRequestMapping.class
+antation\JController.class
+antation\JService.class
+com\jaxon\demo\service\HelloService.class
+com\jaxon\demo\service\impl\HelloServiceImpl.class
+servlet\DispatcherServlet.class

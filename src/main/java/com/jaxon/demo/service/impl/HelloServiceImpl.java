@@ -1,6 +1,6 @@
 package com.jaxon.demo.service.impl;
 
-import com.jaxon.demo.antation.JService;
+import antation.JService;
 import com.jaxon.demo.service.HelloService;
 
 @JService("helloService")

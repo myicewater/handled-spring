@@ -47,8 +47,15 @@ public class DispatcherServlet extends HttpServlet {
 
     }
 
-    public void createBeans(){
+    public void createBeans() throws ClassNotFoundException {
+        ClassLoader classLoader = this.getClass().getClassLoader();
+        for(String name : classes){
 
+            Class<?> aClass = Class.forName(name, true, classLoader);
+            if(!aClass.isInterface()){
+                beans.put()
+            }
+        }
     }
 
     //扫描所有的类
@@ -58,10 +65,12 @@ public class DispatcherServlet extends HttpServlet {
         File file = new File(resource.getFile());
         File[] files = file.listFiles();
         for(File f:files){
-            if(file.isDirectory()){
-                scanCompment(path+f.getName());
+            if(f.isDirectory()){
+                scanCompment(path+"."+f.getName());
             }else{
-                classes.add(path+f.getName());
+                String name = f.getName().replace(".class","");
+                classes.add(path+"."+name);
+                System.out.println("scan class:"+path+name);
             }
         }
 
