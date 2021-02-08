@@ -6,7 +6,7 @@ import com.jaxon.demo.service.HelloService;
 @JService("helloService")
 public class HelloServiceImpl implements HelloService {
     @Override
-    public void hello() {
-        System.out.println("hello Jaxon");
+    public String hello() {
+        return "hello Jaxon";
     }
 }

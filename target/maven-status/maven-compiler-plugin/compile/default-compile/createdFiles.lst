@@ -4,6 +4,7 @@ util\PropUtil.class
 antation\JRequestMapping.class
 antation\JController.class
 antation\JService.class
+common\MethodInvockHelper.class
 com\jaxon\demo\service\HelloService.class
 com\jaxon\demo\service\impl\HelloServiceImpl.class
 servlet\DispatcherServlet.class
